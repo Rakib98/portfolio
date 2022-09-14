@@ -5,7 +5,7 @@ html {
   }
 
 body {
-    height: 100vh;
+    /* height: 100vh; */
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
@@ -88,6 +88,7 @@ section {
 
 .featured {
     position: relative;
+    margin-bottom: 5em;
 }
 .featured::before {
     content: "";
@@ -195,7 +196,16 @@ hr {
     .featured, .portfolio-container {
         display: grid;
         grid-template-columns: 55% auto;
+        img {
+            max-width: 90%;
+        }
     }
+
+    /* .portfolio-container {
+        display: grid;
+        grid-template-columns: 55% auto;
+    } */
+
     .left, .portfolio-left {
         display: grid;
         place-content: center;
@@ -229,12 +239,15 @@ hr {
         margin-left: 6em;
         width: 95%;
     }
+    .featured {
+        margin-top: unset;
+    }
 }
 
 
 @media only screen and (min-width: 1050px) { 
     .hero {
-        height: 90vh;
+        /* height: 90vh; */
     }
     .nav-container {
         display: grid;

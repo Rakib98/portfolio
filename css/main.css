@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  height: 100vh;
+  /* height: 100vh; */
   margin: 0;
   font-family: 'Poppins', sans-serif;
 }
@@ -98,6 +98,7 @@ section {
 
 .featured {
   position: relative;
+  margin-bottom: 5em;
 }
 
 .featured::before {
@@ -230,6 +231,13 @@ hr {
     -ms-grid-columns: 55% auto;
         grid-template-columns: 55% auto;
   }
+  .featured img, .portfolio-container img {
+    max-width: 90%;
+  }
+  /* .portfolio-container {
+        display: grid;
+        grid-template-columns: 55% auto;
+    } */
   .left, .portfolio-left {
     display: -ms-grid;
     display: grid;
@@ -265,11 +273,14 @@ hr {
     margin-left: 6em;
     width: 95%;
   }
+  .featured {
+    margin-top: unset;
+  }
 }
 
 @media only screen and (min-width: 1050px) {
   .hero {
-    height: 90vh;
+    /* height: 90vh; */
   }
   .nav-container {
     display: -ms-grid;
